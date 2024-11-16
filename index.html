@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br"class="">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS-TIMER2.0</title> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <main id="content">
+        <div id="Timer">
+            <section id="Time" class="flex">
+                <span id="minutes" tabindex="0">00</span>
+                <span >:</span>
+                <span id="seconds" tabindex="0">00</span>
+            </section>
+
+            <section id="buttons" class="flex">
+                <button class="circle">
+                    <img data-action="toggleRunning" src="./assets/play.svg" alt="Iniciar tempo">
+                </button>
+                <button class="stop">
+                    <img data-action="toggleRunning" src="./assets/stop.svg" alt="Parar tempo">
+                </button>
+                <button id="more">
+                    <img data-action="more" src="./assets/+.svg" alt="Aumenta 5 minutos">
+                </button>
+                <button id="less">
+                    <img data-action="less"  src="./assets/-.svg" alt="Diminui 5 minutos">
+                </button>
+            </section>
+        </div>
+
+        <div id="sound" class="flex">
+            <button class="forest">
+                <img data-action="forest" src="./assets/icon-forest.svg" alt="Som de floresta">
+            </button>
+            <button class="rain">
+                <img  data-action="rain" src="./assets/icon-rain.svg" alt="Som de Chuva">
+            </button>
+            <button class="coffe">
+                <img  data-action="coffe" src="./assets/icon-coffee-maker.svg" alt="Som de cafeteria">
+            </button>
+            <button class="fireplace">
+                <img data-action="fireplace"  src="./assets/icon-fireplace.svg" alt="Som de lareira">
+            </button>
+        </div>
+        
+    </main>
+</body>
+</html>
